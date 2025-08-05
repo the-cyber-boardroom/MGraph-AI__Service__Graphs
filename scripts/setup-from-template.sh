@@ -28,9 +28,9 @@ git merge template/main --allow-unrelated-histories -m "Initial template import"
 echo "🔄 Renaming service..."
 
 # Rename directories
-find . -type d -name "*mgraph_ai_service_base*" | while read dir; do
+find . -type d -name "*mgraph_ai_service_graphs*" | while read dir; do
     if [[ "$dir" != *".git"* ]]; then
-        newdir=$(echo "$dir" | sed "s/mgraph_ai_service_base/$SERVICE_NAME/g")
+        newdir=$(echo "$dir" | sed "s/mgraph_ai_service_graphs/$SERVICE_NAME/g")
         if [ "$dir" != "$newdir" ]; then
             mv "$dir" "$newdir"
             echo "  Renamed: $dir -> $newdir"
@@ -49,7 +49,7 @@ find . -type f \( -name "*.py" -o -name "*.md" -o -name "*.yml" -o -name "*.yaml
     cp "$file" "$file.bak"
 
     # Replace service names
-    sed -i.tmp "s/mgraph_ai_service_base/$SERVICE_NAME/g" "$file"
+    sed -i.tmp "s/mgraph_ai_service_graphs/$SERVICE_NAME/g" "$file"
     sed -i.tmp "s/MGraph-AI__Service__Base/$REPO_NAME/g" "$file"
     sed -i.tmp "s/MGraph-AI Service Base/$SERVICE_DISPLAY_NAME/g" "$file"
 

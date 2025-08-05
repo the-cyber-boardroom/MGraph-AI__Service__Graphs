@@ -71,7 +71,7 @@ export FAST_API__AUTH__API_KEY__VALUE="your-secret-key"
 pytest
 
 # Run with coverage
-pytest --cov=mgraph_ai_service_base
+pytest --cov=mgraph_ai_service_graphs
 
 # Run specific test file
 pytest tests/unit/fast_api/test_Service__Fast_API__client.py
@@ -120,7 +120,7 @@ The service uses GitHub Actions for continuous deployment:
 ### AWS Lambda Configuration
 ```yaml
 Runtime: python3.12
-Handler: mgraph_ai_service_base.fast_api.lambda_handler.run
+Handler: mgraph_ai_service_graphs.fast_api.lambda_handler.run
 MemorySize: 512
 Timeout: 30
 Environment:

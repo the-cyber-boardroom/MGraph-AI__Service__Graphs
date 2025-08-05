@@ -66,7 +66,7 @@ export FAST_API__AUTH__API_KEY__VALUE="your-secret-key"
 # Run locally
 ./scripts/run-locally.sh
 # or
-uvicorn mgraph_ai_service_base.fast_api.lambda_handler:app --reload --host 0.0.0.0 --port 10011
+uvicorn mgraph_ai_service_graphs.fast_api.lambda_handler:app --reload --host 0.0.0.0 --port 10011
 ```
 
 ### Basic Usage
@@ -169,7 +169,7 @@ FAST_API__AUTH__API_KEY__VALUE=development-key-12345
 ### Project Structure
 
 ```
-mgraph_ai_service_base/
+mgraph_ai_service_graphs/
 ├── fast_api/
 │   ├── lambda_handler.py      # AWS Lambda entry point
 │   ├── Service__Fast_API.py   # FastAPI application setup
@@ -216,7 +216,7 @@ def setup_routes(self):
 pytest
 
 # Run with coverage
-pytest --cov=mgraph_ai_service_base
+pytest --cov=mgraph_ai_service_graphs
 
 # Run specific test file
 pytest tests/unit/fast_api/test_Service__Fast_API__client.py
