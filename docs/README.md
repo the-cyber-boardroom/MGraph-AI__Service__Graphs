@@ -1,8 +1,8 @@
-# MGraph-AI Service Base Documentation
+# MGraph-AI Service Graphs Documentation
 
 ## Overview
 
-MGraph-AI Service Base will be a production-ready FastAPI microservice that provides Large Language Model (BASE) capabilities through a secure, type-safe API. 
+MGraph-AI Service Graphs will be a production-ready FastAPI microservice that provides Large Language Model (BASE) capabilities through a secure, type-safe API. 
 
 ## Architecture
 
@@ -50,8 +50,8 @@ The service follows a clean architecture pattern with clear separation of concer
 ### Local Development
 ```bash
 # Clone the repository
-git clone https://github.com/the-cyber-boardroom/MGraph-AI__Service__Base.git
-cd MGraph-AI__Service__Base
+git clone https://github.com/the-cyber-boardroom/MGraph-AI__Service__Graphs.git
+cd MGraph-AI__Service__Graphs
 
 # Install dependencies
 pip install -r requirements-test.txt
@@ -153,8 +153,8 @@ Environment:
 
 ## Support
 
-- **Issues**: [GitHub Issues](https://github.com/the-cyber-boardroom/MGraph-AI__Service__Base/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/the-cyber-boardroom/MGraph-AI__Service__Base/discussions)
+- **Issues**: [GitHub Issues](https://github.com/the-cyber-boardroom/MGraph-AI__Service__Graphs/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/the-cyber-boardroom/MGraph-AI__Service__Graphs/discussions)
 - **Documentation**: This document and inline code documentation
 
 ---

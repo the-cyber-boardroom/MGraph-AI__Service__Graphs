@@ -1,10 +1,10 @@
-# MGraph-AI Service Base - Setup Guide
+# MGraph-AI Service Graphs - Setup Guide
 
 This guide walks through the complete setup process from initial repository creation to v1.0.0 release.
 
 ## 📋 Prerequisites
 
-- GitHub repository created: `https://github.com/the-cyber-boardroom/MGraph-AI__Service__Base`
+- GitHub repository created: `https://github.com/the-cyber-boardroom/MGraph-AI__Service__Graphs`
 - AWS account with appropriate permissions
 - GitHub CLI (`gh`) installed (optional but helpful)
 - AWS CLI configured locally
@@ -26,16 +26,16 @@ In your GitHub repository, go to Settings → Secrets and variables → Actions,
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/the-cyber-boardroom/MGraph-AI__Service__Base.git
-cd MGraph-AI__Service__Base
+git clone https://github.com/the-cyber-boardroom/MGraph-AI__Service__Graphs.git
+cd MGraph-AI__Service__Graphs
 
 # 2. Create initial commit (empty repo)
 git init
-echo "# MGraph-AI Service Base" > temp.md
+echo "# MGraph-AI Service Graphs" > temp.md
 git add temp.md
 git commit -m "Initial repository creation"
 git branch -M main
-git remote add origin https://github.com/the-cyber-boardroom/MGraph-AI__Service__Base.git
+git remote add origin https://github.com/the-cyber-boardroom/MGraph-AI__Service__Graphs.git
 git push -u origin main
 
 # 3. Tag the initial commit with v0.1.0
@@ -53,7 +53,7 @@ rm temp.md
 
 # 7. Commit the scaffold
 git add .
-git commit -m "First commit for MGraph-AI Service Base - v1.0.0 scaffold with FastAPI setup, tests, and CI/CD pipeline"
+git commit -m "First commit for MGraph-AI Service Graphs - v1.0.0 scaffold with FastAPI setup, tests, and CI/CD pipeline"
 
 # 8. Push to dev branch
 git push -u origin dev
@@ -194,7 +194,7 @@ git push origin v1.0.0
 
 echo "✅ v1.0.0 released!"
 echo "📝 Now create a GitHub Release manually:"
-echo "   1. Go to https://github.com/the-cyber-boardroom/MGraph-AI__Service__Base/releases"
+echo "   1. Go to https://github.com/the-cyber-boardroom/MGraph-AI__Service__Graphs/releases"
 echo "   2. Click 'Create a new release'"
 echo "   3. Choose tag: v1.0.0"
 echo "   4. Release title: v1.0.0"
@@ -283,4 +283,4 @@ You now have:
 
 ---
 
-This completes the setup! Your MGraph-AI Service Base is now fully operational across all environments.
+This completes the setup! Your MGraph-AI Service Graphs is now fully operational across all environments.

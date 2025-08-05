@@ -47,7 +47,7 @@ git push origin v1.0.0
 echo "✅ v1.0.0 released successfully!"
 echo ""
 echo "📝 Next steps - Create a GitHub Release manually:"
-echo "   1. Go to https://github.com/the-cyber-boardroom/MGraph-AI__Service__Base/releases"
+echo "   1. Go to https://github.com/the-cyber-boardroom/MGraph-AI__Service__Graphs/releases"
 echo "   2. Click 'Create a new release'"
 echo "   3. Choose tag: v1.0.0"
 echo "   4. Release title: v1.0.0"

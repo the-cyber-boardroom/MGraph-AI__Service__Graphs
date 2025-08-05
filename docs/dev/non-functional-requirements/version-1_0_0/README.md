@@ -1,4 +1,4 @@
-# Creating Services from MGraph-AI__Service__Base
+# Creating Services from MGraph-AI__Service__Graphs
 
 This guide describes how to create new MGraph-AI services from this template using a clean, automated approach that enables future template updates.
 
@@ -26,13 +26,13 @@ cd MGraph-AI__Service__YourName
 
 ```bash
 # Download and run the setup script
-curl -O https://raw.githubusercontent.com/the-cyber-boardroom/MGraph-AI__Service__Base/main/setup-from-template.sh
+curl -O https://raw.githubusercontent.com/the-cyber-boardroom/MGraph-AI__Service__Graphs/main/setup-from-template.sh
 chmod +x setup-from-template.sh
 ./setup-from-template.sh
 ```
 
 The script will:
-1. Pull the template from `MGraph-AI__Service__Base`
+1. Pull the template from `MGraph-AI__Service__Graphs`
 2. Extract service name from your repo name (e.g., `MGraph-AI__Service__Auth` → `mgraph_ai_service_auth`)
 3. Rename all files and folders
 4. Replace all placeholders
@@ -45,7 +45,7 @@ If you prefer to run the steps manually:
 
 ```bash
 # 1. Add template as remote and pull
-git remote add template https://github.com/the-cyber-boardroom/MGraph-AI__Service__Base.git
+git remote add template https://github.com/the-cyber-boardroom/MGraph-AI__Service__Graphs.git
 git fetch template
 git merge template/main --allow-unrelated-histories
 
@@ -58,7 +58,7 @@ SERVICE_NAME=$(echo $REPO_NAME | sed 's/MGraph-AI__Service__/mgraph_ai_service_/
 
 # 4. Commit changes
 git add .
-git commit -m "Initialize from MGraph-AI__Service__Base"
+git commit -m "Initialize from MGraph-AI__Service__Graphs"
 
 # 5. Push to GitHub
 git push -u origin main
@@ -89,7 +89,7 @@ echo "📋 Display name: $SERVICE_DISPLAY_NAME"
 
 # 2. Add template remote and pull
 echo "📥 Pulling from template..."
-git remote add template https://github.com/the-cyber-boardroom/MGraph-AI__Service__Base.git
+git remote add template https://github.com/the-cyber-boardroom/MGraph-AI__Service__Graphs.git
 git fetch template
 git merge template/main --allow-unrelated-histories -m "Initial template import"
 
@@ -111,7 +111,7 @@ find . -type f \( -name "*.py" -o -name "*.md" -o -name "*.yml" -o -name "*.yaml
     
     # Replace service names
     sed -i.bak "s/mgraph_ai_service_graphs/$SERVICE_NAME/g" "$file"        
-    sed -i.bak "s/MGraph-AI__Service__Base/$REPO_NAME/g" "$file"
+    sed -i.bak "s/MGraph-AI__Service__Graphs/$REPO_NAME/g" "$file"
     
     # Clean up backup files
     rm -f "$file.bak"
@@ -132,7 +132,7 @@ echo "💾 Committing changes..."
 git add .
 git commit -m "Initialize $SERVICE_DISPLAY_NAME from template
 
-- Based on MGraph-AI__Service__Base v1.0.0
+- Based on MGraph-AI__Service__Graphs v1.0.0
 - Service name: $SERVICE_NAME
 - Repository: $REPO_NAME"
 
@@ -173,7 +173,7 @@ Your repository name determines the service configuration:
 | Repository Name | Service Name (code) | Display Name |
 |----------------|-------------------|--------------|
 | `MGraph-AI__Service__Auth` | `mgraph_ai_service_auth` | MGraph-AI Service Auth |
-| `MGraph-AI__Service__Base` | `mgraph_ai_service_graphs` | MGraph-AI Service Base |
+| `MGraph-AI__Service__Graphs` | `mgraph_ai_service_graphs` | MGraph-AI Service Graphs |
 | `MGraph-AI__Service__Data-Pipeline` | `mgraph_ai_service_data_pipeline` | MGraph-AI Service Data Pipeline |
 
 ## 📁 Template Structure
@@ -181,7 +181,7 @@ Your repository name determines the service configuration:
 The template uses `mgraph_ai_service_graphs` as the placeholder service name:
 
 ```
-MGraph-AI__Service__Base/
+MGraph-AI__Service__Graphs/
 ├── mgraph_ai_service_graphs/     # Will be renamed to your service
 ├── tests/
 ├── docs/

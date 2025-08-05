@@ -129,7 +129,7 @@ Our approach uses Git's remote feature elegantly:
 git remote add origin git@github.com:org/MGraph-AI__Service__YourService.git
 
 # Template: The template repository
-git remote add template https://github.com/org/MGraph-AI__Service__Base.git
+git remote add template https://github.com/org/MGraph-AI__Service__Graphs.git
 ```
 
 This enables:

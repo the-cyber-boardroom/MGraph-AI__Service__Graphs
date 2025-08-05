@@ -1,11 +1,11 @@
-# MGraph-AI Service Base
+# MGraph-AI Service Graphs
 
-[![Current Release](https://img.shields.io/badge/release-v0.3.3-blue)](https://github.com/the-cyber-boardroom/MGraph-AI__Service__Base/releases)
+[![Current Release](https://img.shields.io/badge/release-v0.3.3-blue)](https://github.com/the-cyber-boardroom/MGraph-AI__Service__Graphs/releases)
 [![Python](https://img.shields.io/badge/python-3.12-blue)](https://www.python.org/downloads/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.116.1-009688)](https://fastapi.tiangolo.com/)
 [![AWS Lambda](https://img.shields.io/badge/AWS-Lambda-orange)](https://aws.amazon.com/lambda/)
 [![License](https://img.shields.io/badge/license-Apache%202.0-green)](LICENSE)
-[![CI Pipeline - DEV](https://github.com/the-cyber-boardroom/MGraph-AI__Service__Base/actions/workflows/ci-pipeline__dev.yml/badge.svg)](https://github.com/the-cyber-boardroom/MGraph-AI__Service__Base/actions)
+[![CI Pipeline - DEV](https://github.com/the-cyber-boardroom/MGraph-AI__Service__Graphs/actions/workflows/ci-pipeline__dev.yml/badge.svg)](https://github.com/the-cyber-boardroom/MGraph-AI__Service__Graphs/actions)
 
 A production-ready FastAPI microservice template for building MGraph-AI services. This template provides a complete scaffold with CI/CD pipeline, AWS Lambda deployment, and type-safe architecture.
 
@@ -24,7 +24,7 @@ This repository serves as the base template for creating new MGraph-AI services.
 
 ## 📚 Creating a New Service
 
-To create a new service from this template, see [Creating Services from MGraph-AI__Service__Base](docs/dev/non-functional-requirements/version-1_0_0/README.md).
+To create a new service from this template, see [Creating Services from MGraph-AI__Service__Graphs](docs/dev/non-functional-requirements/version-1_0_0/README.md).
 
 ## 🚀 Features
 
@@ -52,8 +52,8 @@ To create a new service from this template, see [Creating Services from MGraph-A
 
 ```bash
 # Clone the repository
-git clone https://github.com/the-cyber-boardroom/MGraph-AI__Service__Base.git
-cd MGraph-AI__Service__Base
+git clone https://github.com/the-cyber-boardroom/MGraph-AI__Service__Graphs.git
+cd MGraph-AI__Service__Graphs
 
 # Install dependencies
 pip install -r requirements-test.txt
@@ -322,8 +322,8 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 
 ## 📞 Support
 
-- 🐛 Issues: [GitHub Issues](https://github.com/the-cyber-boardroom/MGraph-AI__Service__Base/issues)
-- 💬 Discussions: [GitHub Discussions](https://github.com/the-cyber-boardroom/MGraph-AI__Service__Base/discussions)
+- 🐛 Issues: [GitHub Issues](https://github.com/the-cyber-boardroom/MGraph-AI__Service__Graphs/issues)
+- 💬 Discussions: [GitHub Discussions](https://github.com/the-cyber-boardroom/MGraph-AI__Service__Graphs/discussions)
 
 ---
 
