@@ -1,28 +1,30 @@
-# MGraph-AI Service Base
+# MGraph-AI Service Graphs
 
-[![Current Release](https://img.shields.io/badge/release-v0.3.0-blue)](https://github.com/the-cyber-boardroom/MGraph-AI__Service__Base/releases)
+[![Current Release](https://img.shields.io/badge/release-v0.4.1-blue)](https://github.com/the-cyber-boardroom/MGraph-AI__Service__Graphs/releases)
 [![Python](https://img.shields.io/badge/python-3.12-blue)](https://www.python.org/downloads/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.116.1-009688)](https://fastapi.tiangolo.com/)
 [![AWS Lambda](https://img.shields.io/badge/AWS-Lambda-orange)](https://aws.amazon.com/lambda/)
 [![License](https://img.shields.io/badge/license-Apache%202.0-green)](LICENSE)
-[![CI Pipeline - DEV](https://github.com/the-cyber-boardroom/MGraph-AI__Service__Base/actions/workflows/ci-pipeline__dev.yml/badge.svg)](https://github.com/the-cyber-boardroom/MGraph-AI__Service__Base/actions)
+[![CI Pipeline - DEV](https://github.com/the-cyber-boardroom/MGraph-AI__Service__Graphs/actions/workflows/ci-pipeline__dev.yml/badge.svg)](https://github.com/the-cyber-boardroom/MGraph-AI__Service__Graphs/actions)
 
 A production-ready FastAPI microservice template for building MGraph-AI services. This template provides a complete scaffold with CI/CD pipeline, AWS Lambda deployment, and type-safe architecture.
 
 ## 🎯 Purpose
 
 This repository serves as the base template for creating new MGraph-AI services. It includes:
-- Complete FastAPI application structure
-- Multi-stage CI/CD pipeline (dev, qa, prod)
-- AWS Lambda deployment configuration
-- Type-safe architecture using OSBot-Utils
-- Comprehensive test coverage
-- API key authentication
-- Health check and monitoring endpoints
+- ✅ Complete FastAPI application structure  
+- ✅ Multi-stage CI/CD pipeline (dev, qa, prod)
+- ✅ AWS Lambda deployment configuration
+- ✅ Type-safe architecture using OSBot-Utils
+- ✅ Comprehensive test coverage
+- ✅ API key authentication
+- ✅ Health check and monitoring endpoints
+
+**Note**: This is a template repository. To create your own service, see [Creating Services from Template](docs/dev/non-functional-requirements/version-1_0_0/README.md).
 
 ## 📚 Creating a New Service
 
-To create a new service from this template, see [Creating Services from MGraph-AI__Service__Base](docs/dev/non-functional-requirements/version-1_0_0/README.md).
+To create a new service from this template, see [Creating Services from MGraph-AI__Service__Graphs](docs/dev/non-functional-requirements/version-1_0_0/README.md).
 
 ## 🚀 Features
 
@@ -50,8 +52,8 @@ To create a new service from this template, see [Creating Services from MGraph-A
 
 ```bash
 # Clone the repository
-git clone https://github.com/the-cyber-boardroom/MGraph-AI__Service__Base.git
-cd MGraph-AI__Service__Base
+git clone https://github.com/the-cyber-boardroom/MGraph-AI__Service__Graphs.git
+cd MGraph-AI__Service__Graphs
 
 # Install dependencies
 pip install -r requirements-test.txt
@@ -62,9 +64,9 @@ export FAST_API__AUTH__API_KEY__NAME="x-api-key"
 export FAST_API__AUTH__API_KEY__VALUE="your-secret-key"
 
 # Run locally
-./run-locally.sh
+./scripts/run-locally.sh
 # or
-uvicorn mgraph_ai_service_base.fast_api.lambda_handler:app --reload --host 0.0.0.0 --port 10011
+uvicorn mgraph_ai_service_graphs.fast_api.lambda_handler:app --reload --host 0.0.0.0 --port 10011
 ```
 
 ### Basic Usage
@@ -167,7 +169,7 @@ FAST_API__AUTH__API_KEY__VALUE=development-key-12345
 ### Project Structure
 
 ```
-mgraph_ai_service_base/
+mgraph_ai_service_graphs/
 ├── fast_api/
 │   ├── lambda_handler.py      # AWS Lambda entry point
 │   ├── Service__Fast_API.py   # FastAPI application setup
@@ -214,7 +216,7 @@ def setup_routes(self):
 pytest
 
 # Run with coverage
-pytest --cov=mgraph_ai_service_base
+pytest --cov=mgraph_ai_service_graphs
 
 # Run specific test file
 pytest tests/unit/fast_api/test_Service__Fast_API__client.py
@@ -320,8 +322,8 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 
 ## 📞 Support
 
-- 🐛 Issues: [GitHub Issues](https://github.com/the-cyber-boardroom/MGraph-AI__Service__Base/issues)
-- 💬 Discussions: [GitHub Discussions](https://github.com/the-cyber-boardroom/MGraph-AI__Service__Base/discussions)
+- 🐛 Issues: [GitHub Issues](https://github.com/the-cyber-boardroom/MGraph-AI__Service__Graphs/issues)
+- 💬 Discussions: [GitHub Discussions](https://github.com/the-cyber-boardroom/MGraph-AI__Service__Graphs/discussions)
 
 ---
 
